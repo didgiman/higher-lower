@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Technical Asessment - Wim Lemmens</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Luckiest+Guy&display=swap"
+            rel="stylesheet" />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="bg-slate-700">
+
+        <main class="flex justify-center items-center min-h-screen">
+            <div class="container rounded-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+                <div class="game-section flex" id="newGame">
+                    <h2>Higher Lower</h2>
+                    <div class="grow flex items-center justify-center">
+                        <img src="images/walter.jpg" class="w-96" alt="Walter" />
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="btn max-w-96" id="btnNewGame">Start new game</button>
+                    </div>
+                </div>
+                <div class="game-section hidden" id="playGame">
+                    <h2>Higher Lower</h2>
+                    <div class="grow flex flex-col items-center justify-around">
+                        <div id="cardImg"></div>
+                        <div id="inGameScore" class="text-center text-white"></div>
+                    </div>
+                    <div class="flex flex-row space-x-5 w-full justify-center" id="gameButtons">
+                        <button class="btn max-w-96" id="btnHigher">Higher</button>
+                        <button class="btn max-w-96" id="btnLower">Lower</button>
+                    </div>
+                </div>
+                <div class="game-section hidden" id="gameOver">
+                    <h2>Higher Lower</h2>
+                    <div class="grow flex flex-col items-center justify-center text-white">
+                        <span>You scored</span>
+                        <div id="score" class="text-6xl text-center">0</div>
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <button class="btn max-w-96" id="btnTryAgain">Try again</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="core.js"></script>
+    </body>
+</html>
