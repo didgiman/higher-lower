@@ -90,5 +90,31 @@ At the end of the assessment, your changes should be available in git.
 
 ### Showcase result
 
-TODO : You
-> At the end of the assessment, provide the steps on how to see the result.
+To build the style.css file with Tailwind CSS:
+```
+npm run build
+```
+
+To build the style.css file with Tailwind CSS and watch for changes:
+```
+npm run watch
+```
+
+To include a game in a html page:
+```
+// Include in <head> section:
+<link rel="stylesheet" href="style.css" />
+
+// Include in body section:
+<div id="game1"></div>
+<script src="DeckService.js"></script>
+<script src="HigherLowerGame.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Initialize card game
+    const gameContainer1 = document.getElementById("game1");
+    const game1 = new HigherLowerGame(gameContainer1);
+});
+</script>
+```
+You can include as many games in a page as you like.

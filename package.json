@@ -1,5 +1,12 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.15"
-  }
+    "name": "higher-lower-card-game",
+    "version": "1.0.0",
+    "description": "Vanilla JavaScript Higher Lower Card Game",
+    "scripts": {
+        "build": "npx tailwindcss -i ./input.css -o ./style.css",
+        "watch": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.15"
+    }
 }
